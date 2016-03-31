@@ -1,0 +1,27 @@
+{
+  "name": "brightnucleus/config-52",
+  "description": "Minimal, reusable Config component (without namespaces)",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alain Schlesser",
+      "email": "alain.schlesser@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "require": {
+    "xrstf/composer-php52": "^1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "xrstf\\Composer52\\Generator::onPostInstallCmd"
+    ]
+  }
+}
